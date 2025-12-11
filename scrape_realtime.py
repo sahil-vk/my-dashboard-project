@@ -15,7 +15,7 @@ os.makedirs(TOP10_DIR, exist_ok=True)
 
 # Function to delete old CSV files
 def delete_old_csv_files():
-    csv_pattern = os.path.join(DATA_DIR, 'crypto_data_*.csv')
+    csv_pattern = f"{DATA_DIR}/crypto_data_*.csv"
     old_files = glob.glob(csv_pattern)
     for file in old_files:
         try:
@@ -77,3 +77,4 @@ if response.status_code == 200:
 
 else:
     print(f"Connection Failed! Error Code {response.status_code}")
+
