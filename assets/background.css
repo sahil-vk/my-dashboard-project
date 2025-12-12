@@ -1,0 +1,13 @@
+body {
+    background-image: url('/assets/background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#main-content {
+    background-color: rgba(0, 0, 0, 0.6);  /* semi-transparent black layer */
+    backdrop-filter: blur(4px);  /* blur effect */
+    border-radius: 10px;
+}
