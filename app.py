@@ -230,6 +230,19 @@ app.layout = html.Div([
             dcc.Store(id='selected-coin', data='bitcoin'),
         ])
     ], id="main-content", style={"marginLeft": "270px", "padding": "20px", "transition": "margin-left 0.3s"})
+    html.Hr(),
+
+html.Div(
+    "© 2025 Sahil Nechwani. All rights reserved.",
+    style={
+        "textAlign": "center",
+        "fontSize": "12px",
+        "color": "#aaaaaa",
+        "marginTop": "40px",
+        "marginBottom": "10px"
+    }
+)
+
 ])
 
 @app.callback(
@@ -324,4 +337,5 @@ if __name__ == '__main__':
     import os
     port = int(os.environ.get("PORT", 8050))
     app.run(host="0.0.0.0", port=port, debug=False)
+
 
