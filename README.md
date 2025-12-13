@@ -30,7 +30,7 @@ presents the insights through an interactive web dashboard.
 - GitHub Actions runs the update process on a schedule
 - The dashboard reads the latest available data and visualizes it
 
-Everything is automated — no manual updates required.
+Everything is automated - no manual updates required.
 
 ---
 
